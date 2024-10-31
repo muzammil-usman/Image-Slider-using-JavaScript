@@ -1,5 +1,11 @@
 let slider = document.getElementById("slider");
-var links = ["Assets/1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+var links = [
+  "Assets/1.jpg",
+  "Assets/2.jpg",
+  "Assets/3.jpg",
+  "Assets/4.jpg",
+  "Assets/5.jpg",
+];
 let count = 0;
 
 function next(value) {
