@@ -1,5 +1,5 @@
 let slider = document.getElementById("slider");
-var links = ["1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
+var links = ["Assets/1.jpg", "2.jpg", "3.jpg", "4.jpg", "5.jpg"];
 let count = 0;
 
 function next(value) {
@@ -14,6 +14,10 @@ function next(value) {
 function previous(value) {
   if (value === "-") {
     count--;
+
+    if (count === -1) {
+      count = 4;
+    }
   }
   slider.setAttribute("src", links[count]);
 }
